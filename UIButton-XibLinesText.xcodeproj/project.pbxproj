@@ -15,6 +15,10 @@
 		FEF353501B7B346E0070C6D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF3534F1B7B346E0070C6D5 /* Images.xcassets */; };
 		FEF353531B7B346E0070C6D5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF353511B7B346E0070C6D5 /* LaunchScreen.xib */; };
 		FEF3535F1B7B346E0070C6D5 /* UIButton_XibLinesTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF3535E1B7B346E0070C6D5 /* UIButton_XibLinesTextTests.m */; };
+		FEF3536C1B7B34A40070C6D5 /* UIButton-XibLinesText.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FEF353681B7B34A40070C6D5 /* UIButton-XibLinesText.podspec */; };
+		FEF3536F1B7B34E20070C6D5 /* UIButton+VDXibLinesText.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF3536E1B7B34E20070C6D5 /* UIButton+VDXibLinesText.m */; };
+		FEF353751B7B4F700070C6D5 /* screenshots1.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF353731B7B4F700070C6D5 /* screenshots1.png */; };
+		FEF353761B7B4F700070C6D5 /* screenshots2.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF353741B7B4F700070C6D5 /* screenshots2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,11 @@
 		FEF353581B7B346E0070C6D5 /* UIButton-XibLinesTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIButton-XibLinesTextTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF3535D1B7B346E0070C6D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEF3535E1B7B346E0070C6D5 /* UIButton_XibLinesTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIButton_XibLinesTextTests.m; sourceTree = "<group>"; };
+		FEF353681B7B34A40070C6D5 /* UIButton-XibLinesText.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "UIButton-XibLinesText.podspec"; sourceTree = "<group>"; };
+		FEF3536D1B7B34E20070C6D5 /* UIButton+VDXibLinesText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+VDXibLinesText.h"; sourceTree = "<group>"; };
+		FEF3536E1B7B34E20070C6D5 /* UIButton+VDXibLinesText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+VDXibLinesText.m"; sourceTree = "<group>"; };
+		FEF353731B7B4F700070C6D5 /* screenshots1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshots1.png; sourceTree = "<group>"; };
+		FEF353741B7B4F700070C6D5 /* screenshots2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshots2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,10 @@
 				FEF3533E1B7B346E0070C6D5 /* UIButton-XibLinesText */,
 				FEF3535B1B7B346E0070C6D5 /* UIButton-XibLinesTextTests */,
 				FEF3533D1B7B346E0070C6D5 /* Products */,
+				FEF353681B7B34A40070C6D5 /* UIButton-XibLinesText.podspec */,
+				FEF353731B7B4F700070C6D5 /* screenshots1.png */,
+				FEF353741B7B4F700070C6D5 /* screenshots2.png */,
+				FEF353691B7B34A40070C6D5 /* Pod */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +133,31 @@
 				FEF3535D1B7B346E0070C6D5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEF353691B7B34A40070C6D5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3536A1B7B34A40070C6D5 /* Assets */,
+				FEF3536B1B7B34A40070C6D5 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		FEF3536A1B7B34A40070C6D5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FEF3536B1B7B34A40070C6D5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FEF3536D1B7B34E20070C6D5 /* UIButton+VDXibLinesText.h */,
+				FEF3536E1B7B34E20070C6D5 /* UIButton+VDXibLinesText.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF353751B7B4F700070C6D5 /* screenshots1.png in Resources */,
 				FEF3534E1B7B346E0070C6D5 /* Main.storyboard in Resources */,
+				FEF3536C1B7B34A40070C6D5 /* UIButton-XibLinesText.podspec in Resources */,
+				FEF353761B7B4F700070C6D5 /* screenshots2.png in Resources */,
 				FEF353531B7B346E0070C6D5 /* LaunchScreen.xib in Resources */,
 				FEF353501B7B346E0070C6D5 /* Images.xcassets in Resources */,
 			);
@@ -222,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEF3536F1B7B34E20070C6D5 /* UIButton+VDXibLinesText.m in Sources */,
 				FEF353451B7B346E0070C6D5 /* AppDelegate.m in Sources */,
 				FEF353421B7B346E0070C6D5 /* main.m in Sources */,
 				FEF3534B1B7B346E0070C6D5 /* ViewController.m in Sources */,

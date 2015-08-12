@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
+#import "UIButton+VDXibLinesText.h"
+
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *testButton;
 
 @end
 
@@ -17,11 +21,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.testButton.vd_xibLinesTextState = UIControlStateHighlighted | UIControlStateSelected;
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)buttonDidTouchUpInside:(UIButton *)sender {
+    [sender setSelected:!sender.isSelected];
 }
 
 @end
