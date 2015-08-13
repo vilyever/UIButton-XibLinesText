@@ -24,7 +24,7 @@
 
 #import "UIButton+VDXibLinesText.h"
 
-self.testButton.vd_xibLinesTextState = UIControlStateHighlighted | UIControlStateSelected;
+self.testButton.vd_xibLinesTextState = UIControlStateHighlighted | UIControlStateDisabled;
 
 ```
 
