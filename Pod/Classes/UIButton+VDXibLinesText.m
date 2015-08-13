@@ -16,9 +16,22 @@
 - (id)vd_initWithCoder:(NSCoder *)aDecoder {
     [self vd_initWithCoder:aDecoder];
     
+    NSString *title = [self titleForState:UIControlStateNormal];
+
     self.titleLabel.numberOfLines = 0;
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    
     [self formatLineBreakTextForState:UIControlStateNormal];
+    
+    if (![title isEqualToString:[self titleForState:UIControlStateHighlighted]]) {
+        [self formatLineBreakTextForState:UIControlStateHighlighted];
+    }
+    if (![title isEqualToString:[self titleForState:UIControlStateSelected]]) {
+        [self formatLineBreakTextForState:UIControlStateSelected];
+    }
+    if (![title isEqualToString:[self titleForState:UIControlStateDisabled]]) {
+        [self formatLineBreakTextForState:UIControlStateDisabled];
+    }
     
     return self;
 }
@@ -33,6 +46,10 @@
 }
 
 - (void)setVd_xibLinesTextState:(UIControlState)vd_xibLinesTextState {
+    if (objc_getAssociatedObject(self, @selector(vd_xibLinesTextState))) {
+        NSAssert(NO, @"Be sure Only Set xibLinesTextState once in viewDidLoad.");
+    }
+    
     objc_setAssociatedObject(self, @selector(vd_xibLinesTextState), @(vd_xibLinesTextState), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     if (vd_xibLinesTextState & UIControlStateHighlighted) {
         [self formatLineBreakTextForState:UIControlStateHighlighted];

@@ -25,8 +25,9 @@
                                 <state key="normal" title="Button\r\nTest\nLines">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="disabled" title="Button\r\nTest\nLines"/>
                                 <state key="selected" title="Selected\r\nTest\nLines"/>
-                                <state key="highlighted" title="Highlight\r\nTest\nLines"/>
+                                <state key="highlighted" title="Button\r\nTest\nLines"/>
                                 <connections>
                                     <action selector="buttonDidTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arP-uM-Atr"/>
                                 </connections>

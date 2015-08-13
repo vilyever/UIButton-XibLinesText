@@ -22,8 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.testButton.vd_xibLinesTextState = UIControlStateHighlighted | UIControlStateSelected;
-
+    self.testButton.vd_xibLinesTextState = UIControlStateHighlighted | UIControlStateDisabled;
+    [self.testButton setTitle:@"modify" forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
